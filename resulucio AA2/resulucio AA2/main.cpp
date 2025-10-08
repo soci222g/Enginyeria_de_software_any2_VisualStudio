@@ -85,20 +85,16 @@ void RecoverMap(std::map<std::string, int>& m, std::string fileName) {
 		
 		input.read(reinterpret_cast<char*>(&stringSize), sizeof(size_t));
 		//load string to c a c++
-	
+		//load strig
 		char* temp = new char[stringSize + 1]; // el +1 es per el /0 de c++
 		input.read(temp, stringSize); //metemos los chars de c en el string de c++
 		temp[stringSize] = '\0'; //metemos el ultimo valo a mano
 		key = temp;// lo igualamos para meterlo en variable temporal
 		delete[]temp; //elimina puntero
 
-
-
 		input.read(reinterpret_cast<char*>(&value), sizeof(int));
 		
-		
 		m.emplace(key, value);
-	
 	}
 
 
