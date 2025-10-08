@@ -123,6 +123,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="configScene.h" />
+    <ClInclude Include="GamePlay.h" />
+    <ClInclude Include="MenuScene.h" />
     <ClInclude Include="Scean.h" />
   </ItemGroup>
   <ItemGroup>
