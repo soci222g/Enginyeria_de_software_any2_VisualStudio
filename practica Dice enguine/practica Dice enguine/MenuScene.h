@@ -11,26 +11,32 @@ class MenuScene : public Scene {
 	void Update() override;
 	void Draw() override;
 
+	bool IsFinisher() override { return true; };
+private:
+	bool validInput;
 };
 void MenuScene::Update() {
 
 	char c = _getch();
-
+	validInput = c >= '1' && c <= '3';
 
 		switch (c)
 		{
 		case '1':
 			//go to Game
+			nextScean = "Gameplay";
+
 			break;
 		case '2':
 			//go to scene
-
+			nextScean = "Confi";
 			break;	
 		case '3':
 			//exit game
-
+			return;
 				break;
-
+		default:
+			break;
 
 		}
 
