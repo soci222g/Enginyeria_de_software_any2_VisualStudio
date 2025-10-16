@@ -127,10 +127,12 @@
     <ClInclude Include="GamePlay.h" />
     <ClInclude Include="MenuScene.h" />
     <ClInclude Include="Scean.h" />
+    <ClInclude Include="sceanManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameData.h" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sceanManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

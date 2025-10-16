@@ -27,6 +27,9 @@
     <ClInclude Include="configScene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="sceanManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -34,6 +37,9 @@
     </ClCompile>
     <ClCompile Include="GameData.h">
       <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sceanManager.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
